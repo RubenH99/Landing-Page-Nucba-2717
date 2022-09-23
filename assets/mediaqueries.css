@@ -1,0 +1,40 @@
+@media (max-width: 992px) {
+  header nav {
+    display: none;
+  }
+
+  .hero-img {
+    display: none;
+  }
+  .hero-info {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .hero-info h1 {
+    width: 90%;
+    max-width: 500px;
+    min-width: unset;
+  }
+  .hero-info p {
+    width: 60%;
+    max-width: 600px;
+  }
+
+  #info h2 {
+    text-align: center;
+    width: 80%;
+  }
+
+  .info-card-container {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-search label {
+    display: none;
+  }
+}

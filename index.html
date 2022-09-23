@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
   </head>
   <body>
     <header>
@@ -22,5 +23,80 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section id="hero">
+        <div class="hero-info">
+          <h1>Encontrá al profesor que necesitás ahora</h1>
+          <p>
+            Elegí al profesional indicado, entre más de 1 millón de profesores
+            registrados, en la materia que estás buscando.
+          </p>
+          <div class="hero-search">
+            <label for="search-bar"
+              ><img
+                src="./assets/hero/logo-search-bar-blue.png"
+                alt=""
+                class="search-bar-logo"
+            /></label>
+            <input
+              type="text"
+              id="search-bar"
+              placeholder="¿Qué vamos a aprender hoy?"
+            />
+            <button class="bt-search">Buscar</button>
+          </div>
+        </div>
+
+        <img
+          src="./assets/hero/Hero-card (1).jpg"
+          alt="Alumno estudiando"
+          class="hero-img"
+        />
+      </section>
+      <section id="info">
+        <h2>Una nueva forma de aprender, a tan solo un par de clicks</h2>
+        <div class="info-card-container">
+          <div class="info-card discover">
+            <img
+              src="./assets/info/card-img-discover-removebg-preview.png"
+              alt="Descubre Img"
+            />
+            <h3>Descubre</h3>
+            <p>
+              Encuentra el profesor que andas necesitando entre miles de
+              opciones, con total libertad para buscar lo que mejor se adapte a
+              tu situación, de manera sencilla y rápida. Siempre habrá un
+              profesor para ayudarte.
+            </p>
+          </div>
+          <div class="info-card organize">
+            <img
+              src="./assets/info/card-img-organize-removebg-preview.png"
+              alt="Oraniza Img"
+            />
+            <h3>Organiza</h3>
+            <p>
+              Una vez elegido, podrás contactarte rápidamente con tu profesor,
+              de manera que puedan programar en conjunto los aspectos necesarios
+              para tus clases. Y en caso de inconvenientes, siempre estamos para
+              darte una mano.
+            </p>
+          </div>
+          <div class="info-card learn">
+            <img
+              src="./assets/info/card-img-learn-removebg-preview.png"
+              alt="Aprende Img"
+            />
+            <h3>Aprende</h3>
+            <p>
+              Acuérdate de siempre elegirte como prioridad. Uno aprende mejor
+              con clases personalizadas, adecuadas a su propia curva de
+              aprendizaje. Plantea tus dudas y no tengas miedo en pedir otras
+              formas de enseñanza.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
