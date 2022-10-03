@@ -1,11 +1,42 @@
 @media (max-width: 992px) {
-  header nav {
+  nav {
+    gap: 10px;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background: var(--text-blue);
+    border: 2px solid var(--font-blue);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
     display: none;
   }
 
-  .hero-img {
-    display: none;
+  .navbar-list a {
+    font-size: 18px;
   }
+
+  .menu-label {
+    display: flex;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+
   .hero-info {
     align-items: center;
     width: 100%;
@@ -31,10 +62,23 @@
   .info-card-container {
     max-width: 80%;
   }
+  .support-image {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
   .hero-search label {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-card-img {
+    display: none;
+  }
+
+  .logo p {
     display: none;
   }
 }

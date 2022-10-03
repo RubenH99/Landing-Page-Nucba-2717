@@ -10,7 +10,9 @@
   --text-strong: #fc6d68;
   --electric: #b9afec;
   --bg-card: #e59866;
-  --card-img: #3b4371;
+  --card-img: #5c80bc;
+  --text-blue: #3b4371;
+  --bg-footer: #100007;
 }
 
 * {
@@ -47,7 +49,7 @@ header {
 }
 
 .logo p {
-  color: var(--electric);
+  color: var(--text-white);
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
@@ -81,6 +83,11 @@ header {
   border-radius: 12px;
 }
 
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
 /* main */
 
 main {
@@ -106,6 +113,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .hero-info {
@@ -120,7 +129,7 @@ main {
   width: 85%;
   min-width: 500px;
   font-weight: 900;
-  color: var(--text-strong);
+  color: var(--text-white);
 }
 
 .hero-info p {
@@ -175,10 +184,35 @@ main {
   cursor: pointer;
 }
 
-.hero-img {
-  width: 450px;
+.hero-card-img {
   margin-left: 15px;
   border-radius: 40px;
+  background: linear-gradient(
+    to left,
+    var(--text-strong),
+    var(--background-secondary)
+  );
+}
+
+.hero-card-img img {
+  width: 450px;
+}
+
+/* discover info */
+
+#discover-info {
+  max-width: 1200px;
+  padding: 70px 0;
+}
+
+.info-text {
+  justify-content: center;
+  display: flex;
+}
+
+.info-text p {
+  text-align: center;
+  max-width: 90%;
 }
 
 /* info */
@@ -219,10 +253,7 @@ main {
 }
 
 .info-card h3 {
-  color: transparent;
-  background: linear-gradient(to right, var(--text-strong), #3b4371);
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: var(--text-blue);
   font-size: 20px;
   font-weight: 600;
 }
@@ -237,4 +268,98 @@ main {
 .info-card p {
   font-size: 14px;
   font-weight: 300;
+}
+
+/* contact */
+
+#contact {
+  max-width: 1200px;
+  padding: 60px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-info h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--font-blue);
+}
+
+.contact-places {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-places h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--font-blue);
+}
+
+.contact-lima,
+.contact-bs-as {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-info-text {
+  display: flex;
+  gap: 4px;
+}
+
+.contact-info-text {
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--text-gray);
+}
+
+.contact-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-socials img {
+  cursor: pointer;
+}
+/* footer */
+
+footer {
+  background: var(--bg-footer);
+  color: var(--electric);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 50px 0;
+}
+
+footer p,
+footer a {
+  color: var(--electric);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+footer span {
+  font-weight: 700;
+}
+
+footer img {
+  width: 80px;
 }

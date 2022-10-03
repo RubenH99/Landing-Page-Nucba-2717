@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Landing Page NovaProf</title>
     <link rel="stylesheet" href="./assets/styles.css" />
     <link rel="stylesheet" href="./assets/mediaqueries.css" />
   </head>
@@ -15,6 +15,14 @@
         <p>NovaProf</p>
       </div>
       <nav>
+        <label for="menu-toggle" class="menu-label">
+          <img
+            src="./assets/icons/align-right.png"
+            alt="menu"
+            class="menu-icon"
+          />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="navbar-list">
           <li><a href="#">?</a></li>
           <li><a href="#">Registrarse</a></li>
@@ -47,12 +55,24 @@
           </div>
         </div>
 
-        <img
-          src="./assets/hero/Hero-card (1).jpg"
-          alt="Alumno estudiando"
-          class="hero-img"
-        />
+        <div class="hero-card-img">
+          <img
+            src="./assets/hero/undraw_Educator_re_ju47-removebg-preview.png"
+            alt="Alumno estudiando"
+          />
+        </div>
       </section>
+      <section id="discover-info">
+        <div class="info-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam unde
+            corporis reiciendis laudantium quo adipisci architecto harum,
+            consectetur commodi sed assumenda velit, quidem eligendi natus
+            provident accusantium eum autem vero.
+          </p>
+        </div>
+      </section>
+
       <section id="info">
         <h2>Una nueva forma de aprender, a tan solo un par de clicks</h2>
         <div class="info-card-container">
@@ -97,6 +117,65 @@
           </div>
         </div>
       </section>
+      <section id="contact">
+        <div class="contact-info">
+          <h3>Contacta con nosotros</h3>
+          <div class="contact-places">
+            <div class="contact-lima">
+              <h4>Lima, Perú</h4>
+              <div class="contact-info-text">
+                <img src="./assets/icons/map-marker-1.png" alt="Icon" />
+                <p>Avenida Chaufa 589</p>
+              </div>
+              <div class="contact-info-text">
+                <img src="./assets/icons/mail.png" alt="Icon" />
+                <p>NovaProfPeruL@gmail.com</p>
+              </div>
+              <div class="contact-info-text">
+                <img src="./assets/icons/phone.png" alt="Icon" />
+                <p>011 5782-1358</p>
+              </div>
+            </div>
+            <div class="contact-bs-as">
+              <h4>Buenos Aires, Argentina</h4>
+              <div class="contact-info-text">
+                <img src="./assets/icons/map-marker-1.png" alt="Icon" />
+                <p>Avenida Libertador 1245</p>
+              </div>
+              <div class="contact-info-text">
+                <img src="./assets/icons/mail.png" alt="Icon" />
+                <p>NovaProfArgBA@gmail.com</p>
+              </div>
+              <div class="contact-info-text">
+                <img src="./assets/icons/phone.png" alt="Icon" />
+                <p>011 4285-1276</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <img src="./assets/icons/instagram-circle.png" alt="Ig Icon" />
+            <img src="./assets/icons/facebook-circle.png" alt="Facebook Icon" />
+            <img src="./assets/icons/twitter-circle.png" alt="Twitter Icon" />
+          </div>
+        </div>
+        <img
+          src="./assets/contact/sammy-service-support.gif"
+          alt="Support Image"
+          class="support-image"
+        />
+      </section>
     </main>
+    <footer>
+      <div>
+        <ul>
+          <li><a href="#">Términos de uso </a></li>
+          <li><a href="#">Trabajá con nosotros</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </div>
+
+      <img src="./assets/logo-nova-prof.png" alt="Logo NovaProf" />
+      <p>© 2022 <span>NovaProf</span>. Explorá, aprendé</p>
+    </footer>
   </body>
 </html>
